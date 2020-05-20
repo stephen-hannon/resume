@@ -1,0 +1,182 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{tgheros}
+\usepackage{lmodern}
+\usepackage[default]{sourcesanspro}
+\usepackage{titlesec}
+
+\titleformat*{\section}{\ttfamily\Large\bfseries\color{primary}}
+\titleformat*{\subsection}{\bfseries}
+
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[inline]{enumitem}
+\usepackage{hyperref}
+\usepackage{soul}
+
+\geometry{margin=0.5in}
+\pagestyle{empty} % No page number
+\setcounter{secnumdepth}{0} % Don't number sections
+\setlength{\parindent}{0in} % Don't indent paragraphs
+\setlist{left=0pt}
+
+\newlist{skillslist}{itemize}{1}
+\setlist[skillslist]{noitemsep, itemindent=-10pt, labelsep=0pt, label={}}
+
+\definecolor{primary}{HTML}{037293}
+
+\newcommand{\present}[0]{{\itshape present}}
+
+\title{Stephen Hannon resume}
+\author{Stephen Hannon}
+\date{May 2020}
+
+\begin{document}
+\begin{minipage}[t]{\dimexpr.33\textwidth-.5\columnsep}
+
+{\ttfamily\large\raggedleft
+    [phone]
+
+    \href{mailto:shannon3@nd.edu}{shannon3@nd.edu}
+
+    \href{https://stephen-hannon.github.io}{stephen-hannon.github.io}
+    
+    [home address]
+    
+    [dome address]
+
+}
+
+\section{Education}
+\subsection{University of Notre Dame}
+
+{\raggedleft
+Aug. 2017 -- May 2021 \\
+Notre Dame, IN
+
+}
+
+\begin{itemize}
+    \item Major GPA: 4.00 / 4.00
+    \item Overall GPA: 3.87 / 4.00
+    \item Pursuing a BS in Computer Science with a minor in Collaborative Innovation
+    \item Relevant Courses:
+    \begin{itemize*}[label=$\cdot$]
+        \item[] Programming Para\-digms
+        \item Operating Systems
+        \item Compiler Design
+        \item Interaction Design
+        \item Programming Challenges
+        \item Visual Communication Design
+        \item Computer Architecture
+        \item Systems Programming
+        \item Data Ethics
+        \item Data Structures
+        \item Design Thinking
+        \item Discrete Math
+        \item Logic Design
+        \item Embedded Systems
+    \end{itemize*}
+\end{itemize}
+
+\section{Awards \& Honors}
+\begin{itemize}
+    \item Dean’s List (May~2020; May~2019; May~2018; December~2017)
+    \item Deloitte Prize for Best Underclassmen Contribution, AT\&T Irish Hacks Hackathon (November~2018)
+\end{itemize}
+
+\section{Skills}
+\begin{minipage}[t]{.5\textwidth}
+
+\subsection{Languages}
+\begin{skillslist}
+    \item JavaScript \& TypeScript
+    \item Python
+    \item C
+    \item C++
+    \item CSS \& SCSS
+    \item HTML
+    \item Java
+    \item Bash
+    \item \textrm{\LaTeX}
+    \item Scheme
+    \item Verilog
+    \item SVG
+\end{skillslist}
+
+\end{minipage}%
+\begin{minipage}[t]{.5\textwidth}
+
+\subsection{Tools}
+\begin{skillslist}
+    \item Angular
+    \item Vue.js
+    \item WordPress
+    \item Git
+    \item Vim
+    \item RxJS
+    \item Shell
+    \item jQuery
+\end{skillslist}
+
+\subsection{Software}
+\begin{skillslist}
+    \item Photoshop
+    \item InDesign
+    \item Illustrator
+\end{skillslist}
+
+\end{minipage}
+
+\end{minipage}%
+\begin{minipage}[t]{\dimexpr.67\textwidth-.5\columnsep}
+
+\begin{center}
+    {\Huge\ttfamily\bfseries \uppercase{\so{Stephen Hannon}}}
+
+    {\large\ttfamily Computer science student interested in front-end development and user experience design}
+\end{center}
+
+\section{Relevant Employment}
+
+\textbf{Software Development Intern} \hfill June--Sept. 2018; Jan. 2019; May--Aug. 2019 \\
+VacayHome Connect \hfill Chicago, IL
+\begin{itemize}
+    \item Worked with a team developing and designing a new online admin portal to be used by vacation rental property managers
+    \item Used Angular as a front-end framework, as well as TypeScript, SCSS, and HTML, to create a scalable, intuitive, and maintainable system
+    \item Incorporated Agile and Scrum methods for project management
+\end{itemize}
+
+\textbf{System Administrator} \hfill Nov. 2019 -- \present{} \\
+\textbf{Associate Sports Editor} \hfill April 2019 -- \present{} \\
+\textbf{Production Staffer} \hfill Aug. 2017 -- \present{} \\
+The Observer \hfill Notre Dame, IN
+
+\begin{itemize}
+    \item Manage WordPress site and eight office computers for Notre Dame’s daily newspaper, while also providing other technical assistance as needed
+    \item Edit stories for accuracy, grammar, and style, and design and lay out pages for print
+    \item Communicate well with writers and editors and train new members
+    \item Work efficiently under a deadline and be flexible to change
+\end{itemize}
+
+\section{Projects}
+
+\subsection{Flexible (personal project; \href{https://stephen-hannon.github.io/flexible/}{stephen-hannon.github.io/flexible})}
+JavaScript, HTML, \& CSS web application for Notre Dame students to monitor spending of meal plan money called Flex Points. Generates a chart displaying spending over the semester.
+
+\subsection{Web server and client group project}
+Command-line web server built in C using only the standard library and system calls as a final project for my Systems Programming class, along with a basic Python web client
+
+\subsection{AT\&T Irish Hacks Hackathon team project}
+Web application that allows ambulance drivers in Ghana to see the closest hospitals and how many available beds they have. Built with Vue.js, Firebase, the Google Maps API, and Material Design Lite.
+
+\subsection{Logic Design partner project}
+Verilog project that displays elementary cellular automata to a monitor. Executed entirely using combinational and sequential logic on the hardware of an FPGA, without any computers.
+
+\subsection{Intro. to Engineering Systems II group project}
+MATLAB simulation of the mechanics and usage of a group of elevators. Developed two algorithms to determine the most efficient car to send in response to a button press.
+
+\end{minipage}
+\end{document}
