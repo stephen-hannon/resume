@@ -9,6 +9,8 @@
 
 \titleformat*{\section}{\ttfamily\Large\bfseries\color{primary}}
 \titleformat*{\subsection}{\bfseries}
+\titlespacing*{\section}{0pt}{1ex}{1ex}
+\titlespacing*{\subsection}{0pt}{1ex}{0ex}
 
 \usepackage{geometry}
 \usepackage{xcolor}
@@ -20,7 +22,8 @@
 \pagestyle{empty} % No page number
 \setcounter{secnumdepth}{0} % Don't number sections
 \setlength{\parindent}{0in} % Don't indent paragraphs
-\setlist{left=0pt}
+\setlength{\columnsep}{.25in}
+\setlist{left=0pt, itemsep=-2pt}
 
 \newlist{skillslist}{itemize}{1}
 \setlist[skillslist]{noitemsep, itemindent=-10pt, labelsep=0pt, label={}}
@@ -35,17 +38,18 @@
 
 \begin{document}
 \begin{minipage}[t]{\dimexpr.33\textwidth-.5\columnsep}
+\begin{flushleft}
 
 {\ttfamily\large\raggedleft
-    [phone]
+    %PHONE%
 
     \href{mailto:shannon3@nd.edu}{shannon3@nd.edu}
 
     \href{https://stephen-hannon.github.io}{stephen-hannon.github.io}
     
-    [home address]
+    %HOME_ADDRESS%
     
-    [dome address]
+    %SCHOOL_ADDRESS%
 
 }
 
@@ -60,35 +64,44 @@ Notre Dame, IN
 
 \begin{itemize}
     \item Major GPA: 4.00 / 4.00
-    \item Overall GPA: 3.87 / 4.00
+    \item Overall GPA: 3.89 / 4.00
     \item Pursuing a BS in Computer Science with a minor in Collaborative Innovation
     \item Relevant Courses:
     \begin{itemize*}[label=$\cdot$]
-        \item[] Programming Para\-digms
+        \item[] Theory of Computing
+        \item Design Research
+        \item Open Source Development
+        \item Programming Paradigms
         \item Operating Systems
         \item Compiler Design
         \item Interaction Design
         \item Programming Challenges
         \item Visual Communication Design
         \item Computer Architecture
-        \item Systems Programming
-        \item Data Ethics
         \item Data Structures
         \item Design Thinking
-        \item Discrete Math
         \item Logic Design
         \item Embedded Systems
+    \end{itemize*}
+    \item Courses in progress:
+    \begin{itemize*}[label=$\cdot$]
+        \item[] Algorithms
+        \item Ethics
+        \item Human--Computer Interaction
+        \item Modern Web Development
+        \item Computer Networks
     \end{itemize*}
 \end{itemize}
 
 \section{Awards \& Honors}
 \begin{itemize}
-    \item Dean’s List (May~2020; May~2019; May~2018; December~2017)
+    \item Dean’s List (Spring~2020; Spring~2019; Spring~2018; Fall~2017)
     \item Deloitte Prize for Best Underclassmen Contribution, AT\&T Irish Hacks Hackathon (November~2018)
 \end{itemize}
 
 \section{Skills}
 \begin{minipage}[t]{.5\textwidth}
+\begin{flushleft}
 
 \subsection{Languages}
 \begin{skillslist}
@@ -103,9 +116,10 @@ Notre Dame, IN
     \item \textrm{\LaTeX}
     \item Scheme
     \item Verilog
-    \item SVG
+    \item MATLAB
 \end{skillslist}
 
+\end{flushleft}
 \end{minipage}%
 \begin{minipage}[t]{.5\textwidth}
 
@@ -117,7 +131,7 @@ Notre Dame, IN
     \item Git
     \item Vim
     \item RxJS
-    \item Shell
+    \item Unix shell
     \item jQuery
 \end{skillslist}
 
@@ -130,18 +144,21 @@ Notre Dame, IN
 
 \end{minipage}
 
-\end{minipage}%
+\end{flushleft}
+\end{minipage}
+\hfill
 \begin{minipage}[t]{\dimexpr.67\textwidth-.5\columnsep}
 
 \begin{center}
     {\Huge\ttfamily\bfseries \uppercase{\so{Stephen Hannon}}}
 
+    \medskip
     {\large\ttfamily Computer science student interested in front-end development and user experience design}
 \end{center}
 
 \section{Relevant Employment}
 
-\textbf{Software Development Intern} \hfill June--Sept. 2018; Jan. 2019; May--Aug. 2019 \\
+\textbf{Software Development Intern} \hfill Summer 2018; Winter 2018--19; Summer 2019 \\
 VacayHome Connect \hfill Chicago, IL
 \begin{itemize}
     \item Worked with a team developing and designing a new online admin portal to be used by vacation rental property managers
@@ -163,19 +180,25 @@ The Observer \hfill Notre Dame, IN
 
 \section{Projects}
 
-\subsection{Flexible (personal project; \href{https://stephen-hannon.github.io/flexible/}{stephen-hannon.github.io/flexible})}
-JavaScript, HTML, \& CSS web application for Notre Dame students to monitor spending of meal plan money called Flex Points. Generates a chart displaying spending over the semester.
+\subsection{\href{https://stephen-hannon.github.io/flexible/}{Flexible (stephen-hannon.github.io/flexible)}}
+Vue.js, HTML, \& SCSS web application for Notre Dame students to monitor spending of meal plan money called Flex Points. Generates a chart displaying spending over the semester.
+
+\subsection{\href{https://brick-a-pic.github.io/brick-a-pic}{Brick a Pic (brick-a-pic.github.io)}}
+Web app that takes an image and converts it to a Lego mosaic. Built with Vue.js and open-source development practices.
+
+\subsection{B Minor compiler}
+Full compiler written in C for a programming language called B Minor similar to C, with first-class strings, optional type inference, and strict typing. The compiler comes with pretty-printing, type-checking, and x86 assembly code generation.
+
+\subsection{\href{https://github.com/GhanaNeedAnAmbulance/WebDev}{2018 Irish Hacks Hackathon team project}}
+Web application that allows ambulance drivers in Ghana to see the closest hospitals and how many available beds they have. Built with Vue.js, Firebase, the Google Maps API, and Material Design Lite.
 
 \subsection{Web server and client group project}
 Command-line web server built in C using only the standard library and system calls as a final project for my Systems Programming class, along with a basic Python web client
 
-\subsection{AT\&T Irish Hacks Hackathon team project}
-Web application that allows ambulance drivers in Ghana to see the closest hospitals and how many available beds they have. Built with Vue.js, Firebase, the Google Maps API, and Material Design Lite.
-
 \subsection{Logic Design partner project}
 Verilog project that displays elementary cellular automata to a monitor. Executed entirely using combinational and sequential logic on the hardware of an FPGA, without any computers.
 
-\subsection{Intro. to Engineering Systems II group project}
+\subsection{\href{https://github.com/player13245/elevator-control}{Intro. to Engineering Systems II group project}}
 MATLAB simulation of the mechanics and usage of a group of elevators. Developed two algorithms to determine the most efficient car to send in response to a button press.
 
 \end{minipage}
