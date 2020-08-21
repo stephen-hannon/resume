@@ -1,4 +1,4 @@
-\documentclass[letterpaper]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -18,6 +18,7 @@
 \usepackage{hyperref}
 \usepackage{soul}
 
+\linespread{1.1}
 \geometry{margin=0.5in}
 \pagestyle{empty} % No page number
 \setcounter{secnumdepth}{0} % Don't number sections
@@ -47,6 +48,16 @@
 
     \href{https://stephen-hannon.github.io}{stephen-hannon.github.io}
     
+    % \[
+    % $$
+    % \left.
+    % \begin{array}{l}
+    % foo \\ bar
+    % \end{array}
+    % \right\}
+    % baz
+    % $$
+    % \]
     %HOME_ADDRESS%
     
     %SCHOOL_ADDRESS%
@@ -65,35 +76,35 @@ Notre Dame, IN
 \begin{itemize}
     \item Major GPA: 4.00 / 4.00
     \item Overall GPA: 3.89 / 4.00
-    \item Pursuing a BS in Computer Science with a minor in Collaborative Innovation
+    \item Pursuing a BS in Computer Science with a minor in Collaborative Innovation (design)
     \item Relevant Courses:
     \begin{itemize*}[label=$\cdot$]
-        \item[] Theory of Computing
-        \item Design Research
+        % \item[] Theory of Computing
+        \item[] Design Research
         \item Open Source Development
         \item Programming Paradigms
         \item Operating Systems
         \item Compiler Design
         \item Interaction Design
-        \item Programming Challenges
+        % \item Programming Challenges
         \item Visual Communication Design
-        \item Computer Architecture
+        % \item Computer Architecture
         \item Data Structures
         \item Design Thinking
-        \item Logic Design
-        \item Embedded Systems
+        % \item Logic Design
+        % \item Embedded Systems
     \end{itemize*}
-    \item Courses in progress:
+    \item Relevant courses in progress:
     \begin{itemize*}[label=$\cdot$]
         \item[] Algorithms
-        \item Ethics
+        % \item Ethics
         \item Human--Computer Interaction
         \item Modern Web Development
-        \item Computer Networks
+        % \item Computer Networks
     \end{itemize*}
 \end{itemize}
 
-\section{Awards \& Honors}
+\section[Awards and Honors]{Awards \& Honors}
 \begin{itemize}
     \item Dean’s List (Spring~2020; Spring~2019; Spring~2018; Fall~2017)
     \item Deloitte Prize for Best Underclassmen Contribution, AT\&T Irish Hacks Hackathon (November~2018)
@@ -114,9 +125,9 @@ Notre Dame, IN
     \item Java
     \item Bash
     \item \textrm{\LaTeX}
-    \item Scheme
-    \item Verilog
-    \item MATLAB
+    % \item Scheme
+    % \item Verilog
+    % \item MATLAB
 \end{skillslist}
 
 \end{flushleft}
@@ -125,14 +136,17 @@ Notre Dame, IN
 
 \subsection{Tools}
 \begin{skillslist}
+    \item React \& React Native
     \item Angular
     \item Vue.js
+    \item Redux
+    \item Firebase
     \item WordPress
     \item Git
-    \item Vim
-    \item RxJS
-    \item Unix shell
-    \item jQuery
+    % \item Vim
+    % \item RxJS
+    % \item Unix shell
+    % \item jQuery
 \end{skillslist}
 
 \subsection{Software}
@@ -147,6 +161,7 @@ Notre Dame, IN
 \end{flushleft}
 \end{minipage}
 \hfill
+%%%%%%%% COLUMN BREAK %%%%%%%%
 \begin{minipage}[t]{\dimexpr.67\textwidth-.5\columnsep}
 
 \begin{center}
@@ -158,12 +173,27 @@ Notre Dame, IN
 
 \section{Relevant Employment}
 
-\textbf{Software Development Intern} \hfill Summer 2018; Winter 2018--19; Summer 2019 \\
+\textbf{Web Engineer Intern} \hfill Summer 2020 \\
+Verkada \hfill San Mateo, CA (remote)
+\begin{itemize}
+    \item Developed and designed an internal portal, using React \& Redux, to allow teams to explore the company's users and orders, working closely with backend engineers
+    \item Worked on a web app for businesses to view and analyze security camera footage
+\end{itemize}
+
+\textbf{Lead Software Developer} \hfill May 2020 -- \present{} \\
+\textbf{Software Developer} \hfill Jan. 2020 -- May 2020 \\
+Eventurely \hfill Notre Dame, IN
+\begin{itemize}
+    \item Work with a team of students developing an app to connect students with campus events that interest them
+    \item Building an iOS/Android app using React Native, Firebase, and Expo
+\end{itemize}
+
+\textbf{Software Developer Intern} \hfill Summer 2018; Winter 2018--19; Summer 2019 \\
 VacayHome Connect \hfill Chicago, IL
 \begin{itemize}
     \item Worked with a team developing and designing a new online admin portal to be used by vacation rental property managers
     \item Used Angular as a front-end framework, as well as TypeScript, SCSS, and HTML, to create a scalable, intuitive, and maintainable system
-    \item Incorporated Agile and Scrum methods for project management
+    % \item Incorporated Agile and Scrum methods for project management
 \end{itemize}
 
 \textbf{System Administrator} \hfill Nov. 2019 -- \present{} \\
@@ -172,34 +202,37 @@ VacayHome Connect \hfill Chicago, IL
 The Observer \hfill Notre Dame, IN
 
 \begin{itemize}
-    \item Manage WordPress site and eight office computers for Notre Dame’s daily newspaper, while also providing other technical assistance as needed
+    \item Manage 1,000+~view/day WordPress site and eight office computers for Notre Dame’s daily newspaper, while also providing other technical assistance as needed
     \item Edit stories for accuracy, grammar, and style, and design and lay out pages for print
-    \item Communicate well with writers and editors and train new members
+    % \item Communicate well with writers and editors and train new members
     \item Work efficiently under a deadline and be flexible to change
 \end{itemize}
 
 \section{Projects}
 
-\subsection{\href{https://stephen-hannon.github.io/flexible/}{Flexible (stephen-hannon.github.io/flexible)}}
-Vue.js, HTML, \& SCSS web application for Notre Dame students to monitor spending of meal plan money called Flex Points. Generates a chart displaying spending over the semester.
+\subsection[Flexible]{\href{https://stephen-hannon.github.io/flexible/}{Flexible (stephen-hannon.github.io/flexible)}}
+Vue.js web application for Notre Dame students to monitor spending of Flex Points (meal plan money). Generates a chart displaying spending over the semester.
 
-\subsection{\href{https://brick-a-pic.github.io/brick-a-pic}{Brick a Pic (brick-a-pic.github.io)}}
-Web app that takes an image and converts it to a Lego mosaic. Built with Vue.js and open-source development practices.
+\subsection[Brick a Pic]{\href{https://brick-a-pic.github.io/brick-a-pic}{Brick a Pic (brick-a-pic.github.io)}}
+Web app that takes an image and converts it to a Lego mosaic. Built with Vue.js, HTML5 Canvas, and open-source development practices.
 
-\subsection{B Minor compiler}
-Full compiler written in C for a programming language called B Minor similar to C, with first-class strings, optional type inference, and strict typing. The compiler comes with pretty-printing, type-checking, and x86 assembly code generation.
+\subsection[NP-Compete]{\href{https://np-compete.web.app}{NP-Compete (hackathon project; np-compete.web.app)}}
+Proof-of-concept web app to allow local nonprofits to raise money from donations in the form of votes. The app shows each organization's votes and donations in real time.
 
-\subsection{\href{https://github.com/GhanaNeedAnAmbulance/WebDev}{2018 Irish Hacks Hackathon team project}}
-Web application that allows ambulance drivers in Ghana to see the closest hospitals and how many available beds they have. Built with Vue.js, Firebase, the Google Maps API, and Material Design Lite.
+% \subsection[2018 Irish Hacks Hackathon Team Project]{\href{https://github.com/GhanaNeedAnAmbulance/WebDev}{2018 Irish Hacks Hackathon team project}}
+% Proof-of-concept web application that allows ambulance drivers in Ghana to see the closest hospitals and how many available beds they have. Built with Vue.js, Firebase, the Google Maps API, and Material Design Lite.
 
 \subsection{Web server and client group project}
-Command-line web server built in C using only the standard library and system calls as a final project for my Systems Programming class, along with a basic Python web client
+Web server built in C using only the standard library and system calls as a final project for my Systems Programming class, along with a basic Python web client
 
-\subsection{Logic Design partner project}
-Verilog project that displays elementary cellular automata to a monitor. Executed entirely using combinational and sequential logic on the hardware of an FPGA, without any computers.
+% \subsection{B Minor compiler}
+% Full compiler written in C for a programming language called B Minor similar to C, with first-class strings, optional type inference, and strict typing. The compiler comes with pretty-printing, type-checking, and x86 assembly code generation.
 
-\subsection{\href{https://github.com/player13245/elevator-control}{Intro. to Engineering Systems II group project}}
-MATLAB simulation of the mechanics and usage of a group of elevators. Developed two algorithms to determine the most efficient car to send in response to a button press.
+% \subsection{Logic Design partner project}
+% Verilog project that displays elementary cellular automata to a monitor. Executed entirely using combinational and sequential logic on the hardware of an FPGA, without any computers.
+
+% \subsection[Intro to Engineering Systems II group project]{\href{https://github.com/player13245/elevator-control}{Intro. to Engineering Systems II group project}}
+% MATLAB simulation of the mechanics and usage of a group of elevators. Developed two algorithms to determine the most efficient car to send in response to a button press.
 
 \end{minipage}
 \end{document}
