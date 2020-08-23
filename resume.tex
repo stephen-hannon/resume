@@ -24,14 +24,16 @@
 \setcounter{secnumdepth}{0} % Don't number sections
 \setlength{\parindent}{0in} % Don't indent paragraphs
 \setlength{\columnsep}{.25in}
-\setlist{left=0pt, itemsep=-2pt}
+% \setlength{\parskip}{20pt}
+\setlist{left=0pt, itemsep=0pt}
 
 \newlist{skillslist}{itemize}{1}
 \setlist[skillslist]{noitemsep, itemindent=-10pt, labelsep=0pt, label={}}
 
 \definecolor{primary}{HTML}{037293}
 
-\newcommand{\present}[0]{{\itshape present}}
+\newcommand{\present}{{\itshape present}}
+\newcommand{\employmentspace}{\vspace{-5pt}}
 
 \title{Stephen Hannon resume}
 \author{Stephen Hannon}
@@ -48,20 +50,10 @@
 
     \href{https://stephen-hannon.github.io}{stephen-hannon.github.io}
     
-    % \[
-    % $$
-    % \left.
-    % \begin{array}{l}
-    % foo \\ bar
-    % \end{array}
-    % \right\}
-    % baz
-    % $$
-    % \]
     %HOME_ADDRESS%
     
     %SCHOOL_ADDRESS%
-
+    \bigskip
 }
 
 \section{Education}
@@ -175,14 +167,18 @@ Notre Dame, IN
 
 \textbf{Web Engineer Intern} \hfill Summer 2020 \\
 Verkada \hfill San Mateo, CA (remote)
+
+\employmentspace
 \begin{itemize}
     \item Developed and designed an internal portal, using React \& Redux, to allow teams to explore the company's users and orders, working closely with backend engineers
     \item Worked on a web app for businesses to view and analyze security camera footage
 \end{itemize}
 
-\textbf{Lead Software Developer} \hfill May 2020 -- \present{} \\
+\textbf{Lead Software Developer} \hfill May 2020 -- \present \\
 \textbf{Software Developer} \hfill Jan. 2020 -- May 2020 \\
 Eventurely \hfill Notre Dame, IN
+
+\employmentspace
 \begin{itemize}
     \item Work with a team of students developing an app to connect students with campus events that interest them
     \item Building an iOS/Android app using React Native, Firebase, and Expo
@@ -190,17 +186,20 @@ Eventurely \hfill Notre Dame, IN
 
 \textbf{Software Developer Intern} \hfill Summer 2018; Winter 2018--19; Summer 2019 \\
 VacayHome Connect \hfill Chicago, IL
+
+\employmentspace
 \begin{itemize}
     \item Worked with a team developing and designing a new online admin portal to be used by vacation rental property managers
     \item Used Angular as a front-end framework, as well as TypeScript, SCSS, and HTML, to create a scalable, intuitive, and maintainable system
     % \item Incorporated Agile and Scrum methods for project management
 \end{itemize}
 
-\textbf{System Administrator} \hfill Nov. 2019 -- \present{} \\
-\textbf{Associate Sports Editor} \hfill April 2019 -- \present{} \\
-\textbf{Production Staffer} \hfill Aug. 2017 -- \present{} \\
+\textbf{System Administrator} \hfill Nov. 2019 -- \present \\
+\textbf{Associate Sports Editor} \hfill April 2019 -- \present \\
+\textbf{Production Staffer} \hfill Aug. 2017 -- \present \\
 The Observer \hfill Notre Dame, IN
 
+\employmentspace
 \begin{itemize}
     \item Manage 1,000+~view/day WordPress site and eight office computers for Notre Dame’s daily newspaper, while also providing other technical assistance as needed
     \item Edit stories for accuracy, grammar, and style, and design and lay out pages for print
